@@ -493,10 +493,12 @@ body {
 .section3__btn--white {
     background-color: var(--white);
     color: var(--dark);
-    margin-left: 1.25rem;
 }
 .section3left__link {
     margin-top: 3.125rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .section3left__link span img {
     padding-left: 1rem;
@@ -645,7 +647,7 @@ body {
 /******footer second part**************/
 .footersecondpart__container {
     margin-top: 0;
-    padding-top: 4rem;
+    padding-top: 4rem !important;
 }
 
 .footer__secondpart {
@@ -748,6 +750,7 @@ body {
 .footerfourthpart__container {
     margin-top: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footerfourthpart__left {
@@ -803,7 +806,7 @@ body {
     }
     .header__logo--black {
         width: 14.5rem;
-        padding-left: 1.9rem;
+        padding-left: 0.5rem;
     }
     .banner {
         height: 118vh;
@@ -909,13 +912,84 @@ body {
         grid-template-columns: 1fr;
     }
     .container {
-        max-width: 720px;
+        max-width: 60rem;
     }
     .grid__col4 {
         grid-template-columns: repeat(3, 1fr);
     }
+    .section4__card {
+        grid-template-columns: 1fr 1fr;
+    }
     .s2c__col1 {
         display: grid;
+        grid-template-columns: 1fr !important;
+    }
+    .images__gap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .images__gap img {
+        width: 15%;
+    }
+    .image--Gcloud {
+        width: 22% !important;
+    }
+    .footer__secondpart {
+        height: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    .header {
+        grid-template-columns: 1fr 1fr;
+    }
+    .header__contact {
+        width: 55%;
+    }
+    .header__logo--black {
+        padding-left: 0;
+    }
+    .btn__mobile__nav {
+        padding-right: 1rem;
+    }
+    .banner__content {
+        padding: 1rem 2rem;
+    }
+    .banner__title {
+        font-size: 3rem;
+    }
+    .banner__description{
+        font-size: 1.5rem;
+    }
+    .banner__btn {
+        margin-left: 2rem;
+    }
+    .section1b__text p {
+        font-size: 1.8rem;
+    }
+    .section1b__text h1 {
+        font-size: 0.8rem;
+    }
+    .section4__card {
         grid-template-columns: 1fr;
+    }
+    .section5__description a {
+        justify-self: start;
+    }
+    .footer__firstpart {
+        padding: 2rem;
+    }
+    .grid__col4 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer__thirdpart {
+        grid-template-columns: 1fr;
+    }
+    .footerthirdpart__element {
+        border-right: none;
     }
 }
